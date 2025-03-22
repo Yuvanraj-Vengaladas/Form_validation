@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="heading">
+        <h1>Registration Form</h1>
+    </div>
+
+    <nav class="nav">
+        <a href="index.html">Q1 Form With JS</a>
+        <a href="phpform.html">Q2 Form with PHP</a>
+        <a href="VisaApplication.html">Q3 Form For Visa Application</a>
+    </nav>
+
+    <div class="form">
+        <form onsubmit="return checkform()">
+            <h1 class="form-title">Select Your Country</h1>
+            <select id="v">
+                <option value="NA">--Select--</option>
+                <option value="U">USA</option>
+                <option value="C">Canada</option>
+                <option value="I">India</option>
+                <option value="UK">UK</option>
+                <option value="AUS">Australia</option>
+            </select>
+            <input type="submit" value="Check Visa">
+        </form>
+    </div>
+
+    <div>
+        <h1 id="msg"></h1>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

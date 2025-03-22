@@ -1,0 +1,203 @@
+/* --- BODY STYLING --- */
+body {
+    text-align: center;
+    background: url("https://img.freepik.com/free-photo/visa-application-different-countries-arrangement_23-2149117827.jpg") no-repeat center center/cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- FIXED NAVBAR (Now with proper spacing) --- */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh; /* Fixed height to avoid shifting issues */
+    background: linear-gradient(to right, #0e7190, #62c2ce);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Navbar Links */
+.nav a {
+    color: white;
+    padding: 12px 18px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navbar Hover Effect */
+.nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: yellow;
+    transform: scale(1.1);
+}
+
+/* --- HEADING FIX (Prevent Overlap with Navbar) --- */
+.heading {
+    background: radial-gradient(circle, rgb(173, 252, 237) 10%, rgb(0, 106, 255) 90%);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    width: 60%;
+    margin: auto;
+    margin-top: 12vh; /* Push below the navbar */
+}
+
+/* --- FORM STYLING --- */
+.form {
+    text-align: center;
+    position: relative;
+    left: 25vw;
+    top: 20vh;
+    width: 50vw;
+    background: url("https://media.istockphoto.com/id/184940708/photo/travel-background.jpg?s=612x612&w=0&k=20&c=6esEwq6G5Sl50ZfNYeAYvn1D4ZEObmZwesTBDkEv4Sg=") no-repeat center center/cover;
+    height: 30vh;
+    color: red;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Form Hover Effect */
+.form:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Labels */
+label {
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: larger;
+}
+
+/* --- INPUT TEXT STYLING --- */
+input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #0e7190;
+    border-radius: 8px;
+    background: white;
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+input[type="text"]:hover {
+    border-color: #62c2ce;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus effect */
+input[type="text"]:focus {
+    background: #e6f7ff;
+    border-color: #008cba;
+    box-shadow: 0px 4px 15px rgba(0, 140, 186, 0.4);
+}
+
+/* Placeholder text color */
+input[type="text"]::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+/* Disabled input field */
+input[type="text"]:disabled {
+    background: #f0f0f0;
+    color: #999;
+    cursor: not-allowed;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background: red;
+    color: white;
+    width: 10vw;
+    height: 5vh;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Submit Button Hover */
+input[type="submit"]:hover {
+    background: orange;
+    transform: scale(1.05);
+}
+
+/* Select Dropdown */
+/* --- SELECT DROPDOWN STYLING --- */
+select {
+    width: 30vw;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #0e7190;
+    border-radius: 8px;
+    background: white;
+    color: #0e7190;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Dropdown Hover Effect */
+select:hover {
+    border-color: #62c2ce;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* When clicking the select box */
+select:focus {
+    background: #e6f7ff;
+    border-color: #008cba;
+}
+
+/* Style for dropdown options */
+select option {
+    background: white;
+    color: black;
+    font-size: 16px;
+}
+
+/* Disabled Option Style */
+select option[value="NA"] {
+    color: gray;
+    font-weight: bold;
+}
+
+
+/* Message Box */
+#msg {
+    position: relative;
+    text-align: center;
+    top: 30vh;
+    background: #222;
+    color: red;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+p {
+    color: green;
+}
+.form-title {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}

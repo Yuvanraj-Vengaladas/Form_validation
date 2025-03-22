@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="heading">
+        <h1>Visa Application Form</h1>
+    </div>
+
+    <nav class="nav">
+        <a href="index.html">Q1 Form With JS</a>
+        <a href="phpform.html">Q2 Form with PHP</a>
+        <a href="VisaApplication.html">Q3 Form For Visa Application</a>
+    </nav>
+
+    <div class="form">
+        <form onsubmit="return validateform()">
+            <h1 class="form-title">Visa Application Form</h1>
+
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter full name">
+            <p id="n"></p>
+
+            <label for="passport">Passport Number:</label>
+            <input type="text" name="passport" id="passport" maxlength="10" placeholder="8-10 characters">
+            <p id="pass"></p>
+
+            <label for="v2">Select Your Country:</label>
+            <select name="country" id="v2">
+                <option value="NA">--Select--</option>
+                <option value="U">USA</option>
+                <option value="C">Canada</option>
+                <option value="I">India</option>
+                <option value="UK">UK</option>
+                <option value="AUS">Australia</option>
+            </select>
+            <p id="nat"></p>
+
+            <input type="submit" value="Apply for Visa">
+        </form>
+    </div>
+
+    <div id="msg"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
